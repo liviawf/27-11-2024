@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    --background-image: url('fundo.png');
+    --font-main: 'Inter', sans-serif;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-red: #FF0909;
+    --color-grey: #222;
+    --color-dark-grey: #333;
+}
+
+body {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--color-white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-desktop {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-documentary {
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.info-main {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.what-you-learn {
+    background-color: var(--color-dark-grey);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.what-you-learn h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.what-you-learn ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.what-you-learn li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.trailer-info {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-grey);
+    border-radius: 10px;
+}
+
+.trailer-button {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.trailer-button:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.where-to-watch {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: var(--color-white);
+}
+
+
